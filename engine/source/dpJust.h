@@ -14,6 +14,7 @@ class DPJust final {
         void intialize();
         void dynamic_setup_string();
         int costFunction(int i, int j);
+        int solveCases(int position);
    public:
         DPJust();
         DPJust(string feedText);
