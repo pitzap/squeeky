@@ -5,14 +5,16 @@
 
 class DPJust final {
     private:
-        vector<string> uglyText;
+        string uglyText;
         struct PrettyLines{
             vector<vector<string>> rows;
             PrettyLines();
         }
+        void intialize();
+        void dynamic_setup_string();
    public:
         DPJust();
         DPJust(string feedText);
-        DPJust(vector<string> feedText);
+        vector<PrettyLines*> prettyLines;
         ~DPJust();
 }
